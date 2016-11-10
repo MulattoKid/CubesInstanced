@@ -1,0 +1,11 @@
+2016-11-10 18:6:40
+SYSTEM:
+	Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+	15GB
+	GeForce GTX 970/PCIe/SSE2
+	4.5.0 NVIDIA 375.70
+VirtualMem: 50MB -> 0%
+PhysicalMem: 45MB -> 0%
+Best frame time: 4.554ms
+Worst frame time: 39.303ms
+Average frame time: 14.762ms
