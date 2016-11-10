@@ -40,8 +40,8 @@ void Window::createWindow(std::string name, int width, int height)
 	if (_window == nullptr)
 		error("Failed to create SDL window");
 
-	//Fullscreen
-	//SDL_SetWindowFullscreen(_window, SDL_WINDOW_FULLSCREEN);
+	//Fullscreen UNSTABLE - CAREFUL
+	//SDL_SetWindowFullscreen(_window, SDL_WINDOW_FULLSCREEN); 
 
 	SDL_GLContext context = SDL_GL_CreateContext(_window);
 	if (context = nullptr)
