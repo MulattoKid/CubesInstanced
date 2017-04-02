@@ -233,8 +233,8 @@ namespace utilities
 		if (physMemUsedByProcess > *maxPhysicalMemLoad)
 			*maxPhysicalMemLoad = physMemUsedByProcess;
 
-		std::cout << "Virtual memory: " << bytesToMB(virtualMemUsedByProcess) << "MB" << std::endl;
-		std::cout << "Physical memory: " << bytesToMB(physMemUsedByProcess) << "MB" << std::endl;
+		//std::cout << "Virtual memory: " << bytesToMB(virtualMemUsedByProcess) << "MB" << std::endl;
+		//std::cout << "Physical memory: " << bytesToMB(physMemUsedByProcess) << "MB" << std::endl;
 	}
 
 	static void saveInformation(ProcessInfo info)

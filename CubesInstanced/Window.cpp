@@ -145,7 +145,6 @@ void Window::initSline()
 void Window::init()
 {
 	_basicShader.init("basic.vert", "basic.frag");
-	_textShader.init("text.vert", "text.frag");
 	initSline();
 
 	_bestFrameTime = 100.0f;
@@ -288,14 +287,14 @@ void Window::frameTimeCalcuations(std::chrono::steady_clock::time_point startTim
 	glFinish();
 	//Calculate frame time
 	auto endTime = std::chrono::high_resolution_clock::now();
-	float frameTime = (float)std::chrono::duration_cast<std::chrono::microseconds>(endTime - startTime).count() / 1000;
+	float frameTime = (float)std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count();
 	if (frameTime < _bestFrameTime)
 		_bestFrameTime = frameTime;
 	else if (frameTime > _worstFrameTime)
 		_worstFrameTime = frameTime;
 	_totalFrameTime += frameTime;
 	_numberOfFrameTimeSamples++;
-	std::cout << "Frame time: " << frameTime << std::endl;
+	//std::cout << "Frame time: " << frameTime << std::endl;
 }
 
 void Window::update()

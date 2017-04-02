@@ -1,0 +1,11 @@
+2016-11-22 10:54:23
+SYSTEM:
+	Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz
+	15GB
+	GeForce GTX 850M/PCIe/SSE2
+	4.5.0 NVIDIA 372.54
+VirtualMem: 99MB -> 0%
+PhysicalMem: 91MB -> 0%
+Best frame time: 6.766ms
+Worst frame time: 601.973ms
+Average frame time: 17.5496ms
